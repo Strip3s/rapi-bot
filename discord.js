@@ -1,6 +1,7 @@
 // dependencies
 const Discord = require('discord.js')
 const { getFiles } = require('./utils')
+// TODO: Update version for Axios to avoid security vulnerabilities.
 const axios = require('axios')
 const CronJobb = require('cron').CronJob
 const fetch = require("node-fetch")
@@ -341,7 +342,8 @@ const botCommands = {
 
 // Advice Configuration
 // Dynamically loads all available files under ./advice folder. Just add a new <nikke>.js and it will be automatically added.
-// TODO: Add more Nikkes
+// TODO: Figure out how to handle Alters like Privaty Maid and D Killer Wife later
+// TODO: Need to add remaining Nikkes (mainly some newer ones and alters)
 // TODO: Add Thumbnails for each character
 let characters = {};
 const charactersDir = './advice';
